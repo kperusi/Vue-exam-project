@@ -99,7 +99,7 @@ return first+ second
         <div class="list" :style="{borderBottom:`2px solid #${index*7}${index}${index+5}`}" v-for="(eachRepo, index) in pagination" :key="index">
           <div
             class="list-rw"
-            @click="this.$router.push(`about/${eachRepo.name}`)"
+            @click="this.$router.push(`/${eachRepo.name}`)"
           >
             <h3 class="initials" :style="{backgroundColor:`#${index*7}${index}${index+5}`}">
               {{ spliter(eachRepo) }}
@@ -151,4 +151,5 @@ return first+ second
       </div>
     </div>
   </main>
+  <RouterView></RouterView>
 </template>
