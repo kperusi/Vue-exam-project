@@ -78,7 +78,7 @@ return first+ second
 
 <template>
   <main>
-    <div class="loading repo-list-xn list-cx" v-if="loading">Loading Please Wait</div>
+    <div class="loading repo-list-xn list-cx " v-if="loading">Loading Please Wait</div>
     <div class="loading" v-else-if="error">{{ error }}</div>
     <div v-else class="repo-list-xn" >
       <main class="list-cx">

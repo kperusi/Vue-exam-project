@@ -156,7 +156,9 @@ getRepo();
                 <p class="pad-lt-rt-3 border-rx-8">
                   {{ eachRepo.deployments_url }}
                 </p>
-                <button class="url-btn margin-left-auto wt-s"></button>
+                <button
+                  class="url-btn margin-left-auto wt-s pointer-cur"
+                ></button>
               </div>
             </div>
           </div>
