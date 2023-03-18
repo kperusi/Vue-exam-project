@@ -1,10 +1,10 @@
 <template>
   <div class="about">
   
-    <RouterView></RouterView>
+    
     this is about page
   </div>
-  
+  <RouterView></RouterView>
 </template>
 
 <style>
