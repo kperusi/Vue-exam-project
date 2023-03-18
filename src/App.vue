@@ -55,6 +55,6 @@ header {
   background-position-y: 0;
   background-size: 200px cover;
 border: solid red;
-  /* height: 700%; */
+  height: 700px;
 }
 </style>
