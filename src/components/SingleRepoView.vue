@@ -24,10 +24,9 @@ getRepo();
 
 <template>
   <main class="top-cx">
-  Single Reposlist
     <div class="main-cx">
       <div v-for="(eachRepo, index) in reposData" :key="index">
-        <div class="main" v-if="eachRepo.name === this.$route.params.name">
+        <div class="main" v-if="eachRepo.name === $route.params.name">
           <div class="col-1 border-rx-8 margin-left">
             <div style="display: flex">
               <img
@@ -99,7 +98,7 @@ getRepo();
               >
                 {{ eachRepo.owner.login }}
               </h2>
-              <h3 
+              <h3
                 style="
                   border: 2px solid rgb(145, 9, 242);
                   border-radius: 8px;
@@ -170,7 +169,6 @@ getRepo();
   <!-- <RouterView></RouterView> -->
 </template>
 <style>
-
 .main {
   display: flex;
   flex-direction: row;
@@ -365,28 +363,27 @@ getRepo();
     width: 100%;
     margin: 0px auto;
     color: white;
-   
+
     padding: 30px;
   }
-  .margin-left{
+  .margin-left {
     margin-left: 0;
   }
-  .rw-3{
+  .rw-3 {
     width: 100%;
   }
 
-  .col-1{
+  .col-1 {
     position: relative;
     top: 370px;
     /* margin-top: 300px; */
   }
-  .col-3{
+  .col-3 {
     width: 100%;
     margin-left: 0;
     margin-top: -135px;
-
   }
-  .mb-mg-lft{
+  .mb-mg-lft {
     margin-left: 20px;
   }
 
