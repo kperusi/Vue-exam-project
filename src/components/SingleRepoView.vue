@@ -166,7 +166,7 @@ getRepo();
 
     <div class="footer"></div>
   </main>
-  <RouterView></RouterView>
+  <!-- <RouterView></RouterView> -->
 </template>
 <style>
 

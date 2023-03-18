@@ -1,12 +1,12 @@
 <template>
   <div class="about">
   
-    
+    <RouterView></RouterView>
     this is about page
   </div >
-  <div class="container">
-   <RouterView></RouterView>
-  </div>
+  <!-- <div class="container">
+   
+  </div> -->
  
 </template>
 
@@ -15,7 +15,7 @@
   .about {
     display: flex;
     align-items: center;
-    border: solid yellow;
+    /* border: solid yellow; */
     height: 700px;
   }
   .container{
