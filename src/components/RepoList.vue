@@ -1,5 +1,11 @@
 <template>
 <div class="rep">
+    <div v-for="(eachRepo, index) in reposData" :key="index">
+        <div class="main" v-if="eachRepo.name === this.$route.params.name">
+          <p>{{ eachRepo.name }}</p>
+          </div>
+    </div>
+
     <div>GitHub List</div>
     <div>GitHub List</div>
     <div>GitHub List</div>
