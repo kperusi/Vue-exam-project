@@ -3,8 +3,11 @@
   
     
     this is about page
+  </div >
+  <div class="container">
+   <RouterView></RouterView>
   </div>
-  <RouterView></RouterView>
+ 
 </template>
 
 <style>
@@ -13,6 +16,9 @@
     display: flex;
     align-items: center;
     border: solid yellow;
+    height: 700px;
+  }
+  .container{
     height: 700px;
   }
 
