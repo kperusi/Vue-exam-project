@@ -21,9 +21,10 @@ export default {
         <!-- <img src="../assets/icon-moon.svg" alt="moon" :class="toogleThemes ? Theme.darkTheme.moon : Theme.lightTheme.sun"  /> -->
       </div>
     </nav>
+    
+  <RouterView></RouterView>
   </div>
 
-  <RouterView></RouterView>
 </template>
 
 
