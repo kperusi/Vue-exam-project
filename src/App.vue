@@ -54,7 +54,7 @@ header {
   background-repeat: no-repeat;
   background-position-y: 0;
   background-size: 200px cover;
-border: solid red;
+/* border: solid red; */
   height: 700px;
 }
 </style>

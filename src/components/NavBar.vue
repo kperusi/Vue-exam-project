@@ -13,7 +13,7 @@ export default {
     <nav>
       <div class="router-cx">
         <RouterLink class="route" to="/">Home</RouterLink>
-        <RouterLink class="route" to="/about">About</RouterLink>
+        <!-- <RouterLink class="route" to="/about">About</RouterLink> -->
       </div>
 
       <div class="toggle-icon pointer-cur imgs" :class="toogleThemes ? Theme.darkTheme.moon : Theme.lightTheme.sun" @click="$emit('theme')">
