@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../components/HomeView.vue'
-// import SingleRepoView from '../components/SingleRepoView.vue'
+import SingleRepoView from '../components/SingleRepoView.vue'
 import RepoList from '../components/RepoList.vue'
-import About from '../components/AboutView.vue'
+// import About from '../components/AboutView.vue'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -15,7 +15,7 @@ const router = createRouter({
     {
       path: '/about',
       name: 'about',
-      component:About,
+      component:SingleRepoView,
       // component: () => import('../components/AboutView.vue'),
       children:[{
         path:'/about/:name',
