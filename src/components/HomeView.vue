@@ -78,9 +78,9 @@ return first+ second
 
 <template>
   <main>
-    <div class="loading" v-if="loading">Loading Please Wait</div>
+    <div class="loading repo-list-xn list-cx" v-if="loading">Loading Please Wait</div>
     <div class="loading" v-else-if="error">{{ error }}</div>
-    <div class="repo-list-xn" v-else>
+    <div v-else class="repo-list-xn" >
       <main class="list-cx">
         <div class="git-cx">
       <img class="img"
@@ -104,6 +104,7 @@ return first+ second
             <h3 class="initials" :style="{backgroundColor:`#${index*7}${index}${index+5}`}">
               {{ spliter(eachRepo) }}
             </h3>
+            
             <p>{{ eachRepo.name }}</p>
 
          
