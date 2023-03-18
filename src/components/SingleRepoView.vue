@@ -225,11 +225,11 @@ getRepo();
   box-shadow: 2px 3px 10px 2px rgb(205, 198, 198);
 }
 .col-3 {
-  width: 450px;
+  width: 400px;
   box-shadow: 2px 3px 10px 2px rgb(205, 198, 198);
-  margin-left: -40px;
+  margin-left: 10px;
   height: 400px;
-  margin-top: 60px;
+  margin-top: 140px;
   padding-bottom: 5px;
   border: solid white;
 }
