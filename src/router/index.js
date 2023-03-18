@@ -9,10 +9,7 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
-      children:[{
-        path:"/:name",
-        component:SingleRepoView
-      }]
+     
     },
     {
       path: '/about',

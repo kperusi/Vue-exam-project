@@ -1,8 +1,9 @@
 <template>
   <div class="about">
-    
+  this is about page
+    <RouterView></RouterView>
   </div>
-  <RouterView></RouterView>
+  
 </template>
 
 <style>

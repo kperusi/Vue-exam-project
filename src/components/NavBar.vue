@@ -23,8 +23,8 @@ export default {
     </nav>
   </div>
 
-  <RouterView />
+  <RouterView></RouterView>
 </template>
 
-//
-<style lang="scss" scoped></style>
+
+<style  scoped></style>
