@@ -24,7 +24,7 @@ getRepo();
 
 <template>
   <main class="top-cx">
-  thtjktjktjktjk
+  Single Reposlist
     <div class="main-cx">
       <div v-for="(eachRepo, index) in reposData" :key="index">
         <div class="main" v-if="eachRepo.name === this.$route.params.name">
