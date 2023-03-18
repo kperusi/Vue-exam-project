@@ -1,7 +1,7 @@
 <template>
 <div class="rep">
     <div v-for="(eachRepo, index) in reposData" :key="index">
-        <div class="main" v-if="eachRepo.name === this.$route.params.name">
+        <div class="main" v-if="eachRepo.name === $route.params.name">
           <p>{{ eachRepo.name }}</p>
           </div>
     </div>
