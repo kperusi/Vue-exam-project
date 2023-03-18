@@ -3,7 +3,7 @@ import HomeView from '../components/HomeView.vue'
 import SingleRepoView from '../components/SingleRepoView.vue'
 import About from '../components/AboutView.vue'
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes: [
     {
       path: '/',

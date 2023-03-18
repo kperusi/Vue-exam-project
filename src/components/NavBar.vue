@@ -22,9 +22,9 @@ export default {
       </div>
     </nav>
     
-  <RouterView></RouterView>
+  
   </div>
-
+  <RouterView></RouterView>
 </template>
 
 
