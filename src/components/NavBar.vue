@@ -1,6 +1,7 @@
 <script>
 import "../assets/navStyle/navStyle.css";
 export default {
+  // props: ['Theme'],
   data() {},
 };
 </script>
@@ -11,7 +12,7 @@ export default {
     <nav>
       <div class="router-cx">
         <RouterLink class="route" to="/">Home</RouterLink>
-        <RouterLink class="route" to="/about">About</RouterLink>
+        <!-- <RouterLink class="route" to="/about">About</RouterLink> -->
       </div>
 
       <div class="toggle-icon">
@@ -25,9 +26,5 @@ export default {
 
 //
 <style lang="scss" scoped>
-//     .nav{
-//         border: 2px  red;
 
-//     }
-//
 </style>
