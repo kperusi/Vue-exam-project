@@ -24,7 +24,7 @@ export default {
     
   
   </div>
-  <RouterView></RouterView>
+  <!-- <RouterView></RouterView> -->
 </template>
 
 

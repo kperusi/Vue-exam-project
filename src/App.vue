@@ -44,6 +44,7 @@ else
 
     <!-- <p>this is {{ toogleThemes}} {{ toogleThemes ? Theme.darkTheme.moon : Theme.lightTheme.sun }}</p> -->
   </header>
+  <RouterView></RouterView>
 </template>
 
 <style scoped>
