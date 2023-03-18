@@ -42,7 +42,7 @@ else
     <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
     <NavBar @theme ='themeToggle' :Theme="Theme"  :toogleThemes="toogleThemes"/>
 
-    <p>this is {{ toogleThemes}} {{ toogleThemes ? Theme.darkTheme.moon : Theme.lightTheme.sun }}</p>
+    <!-- <p>this is {{ toogleThemes}} {{ toogleThemes ? Theme.darkTheme.moon : Theme.lightTheme.sun }}</p> -->
   </header>
 </template>
 

@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../components/HomeView.vue'
-
+import SingleRepoView from '../components/SingleRepoView.vue'
+import About from '../components/AboutView.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -12,10 +13,12 @@ const router = createRouter({
     {
       path: '/about',
       name: 'about',
-      component: () => import('../components/AboutView.vue'),
+      component:About,
+      // component: () => import('../components/AboutView.vue'),
       children:[{
         path:'/about/:name',
-        component:()=>import('../components/SingleRepoView.vue')
+        component:SingleRepoView
+        // component:()=>import('../components/SingleRepoView.vue')
       }]
     },
     {path:'/:pathMatch(.*)*',component:()=> import('../components/ErrorPage.vue')}

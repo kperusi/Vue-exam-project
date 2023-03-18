@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div class="mg-ct">
+    <h1>404</h1>
 Page not found
     </div>
 </template>
@@ -10,6 +11,11 @@ Page not found
     }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+.mg-ct{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
 
 </style>
