@@ -169,6 +169,9 @@ getRepo();
   <RouterView></RouterView>
 </template>
 <style>
+.top-cx{
+  border: solid red;
+}
 .main {
   display: flex;
   flex-direction: row;

@@ -9,9 +9,9 @@
 
 <style>
 
-  .about {
+  /* .about {
     display: flex;
     align-items: center;
-  }
+  } */
 
 </style>
