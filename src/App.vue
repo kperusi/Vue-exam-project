@@ -41,10 +41,9 @@ else
   <header>
     <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
     <NavBar @theme ='themeToggle' :Theme="Theme"  :toogleThemes="toogleThemes"/>
-
-    <!-- <p>this is {{ toogleThemes}} {{ toogleThemes ? Theme.darkTheme.moon : Theme.lightTheme.sun }}</p> -->
+<RouterView></RouterView>
   </header>
-  <RouterView></RouterView>
+  
 </template>
 
 <style scoped>
@@ -54,8 +53,8 @@ header {
   background-image: url(./assets/bg-desktop-light.jpg);
   background-repeat: no-repeat;
   background-position-y: 0;
-  background-size: 20px cover;
-
-  /* height: 100%; */
+  background-size: 200px cover;
+border: solid red;
+  /* height: 700%; */
 }
 </style>
