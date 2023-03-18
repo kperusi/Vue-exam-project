@@ -1,0 +1,42 @@
+.nav-cx{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    justify-content:space-evenly;
+    align-items: center;
+    // border: 2px solid yellow;
+    padding: 20px;
+   
+}
+
+nav{
+    // border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    width: 60%;
+}
+h1{
+    color: white;
+    font-size: 2em;
+}
+.toggle-icon{
+    color: white;
+    margin-left: auto;
+    // border: 2px solid yellow;
+}
+.router-cx{
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    gap: 20px;
+    // border: solid;
+    padding-top: 40px;
+}
+.route{
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+}

@@ -1,0 +1,12 @@
+@import './base.css';
+
+@font-face {
+  font-family: "Josefin_Sans";
+  src: url("@/assets/Josefin_Sans/static/JosefinSans-Regular.ttf");
+}
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin_Sans";
+  font-weight: 100;
+}
