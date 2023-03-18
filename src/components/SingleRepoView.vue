@@ -337,12 +337,7 @@ getRepo();
     rgb(182, 14, 212)
   );
 }
-.footer {
-  background-image: url(../assets/3303323.jpg);
-  height: 180px;
-  margin-top: -10px;
-  background-position: center;
-}
+
 .border-white {
   border: 1px solid white;
 }

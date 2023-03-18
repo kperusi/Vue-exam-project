@@ -1,8 +1,9 @@
 <script>
 import "../assets/navStyle/navStyle.css";
 export default {
-  // props: ['Theme'],
+  props: ["Theme", "toogleThemes"],
   data() {},
+  emits: ["theme"],
 };
 </script>
 
@@ -15,8 +16,9 @@ export default {
         <!-- <RouterLink class="route" to="/about">About</RouterLink> -->
       </div>
 
-      <div class="toggle-icon">
-        <img src="../assets/icon-moon.svg" alt="moon" />
+      <div class="toggle-icon pointer-cur imgs" :class="toogleThemes ? Theme.darkTheme.moon : Theme.lightTheme.sun" @click="$emit('theme')">
+       
+        <!-- <img src="../assets/icon-moon.svg" alt="moon" :class="toogleThemes ? Theme.darkTheme.moon : Theme.lightTheme.sun"  /> -->
       </div>
     </nav>
   </div>
@@ -25,6 +27,4 @@ export default {
 </template>
 
 //
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

@@ -38,4 +38,23 @@ h1 {
   color: white;
   text-decoration: none;
   font-size: 1.4em;
+}
+
+.pointer-cur {
+  cursor: pointer;
+}
+
+.moon {
+  background-image: url(../icon-sun.svg);
+}
+
+.sun {
+  background-image: url(../icon-moon.svg);
+}
+
+.imgs {
+  height: 30px;
+  width: 30px;
+  background-repeat: no-repeat;
+  background-size: 30px;
 }/*# sourceMappingURL=navStyle.css.map */
