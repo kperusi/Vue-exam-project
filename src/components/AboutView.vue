@@ -9,9 +9,11 @@
 
 <style>
 
-  /* .about {
+  .about {
     display: flex;
     align-items: center;
-  } */
+    border: solid yellow;
+    height: 700px;
+  }
 
 </style>
