@@ -233,7 +233,7 @@ getRepo();
   border-radius: 8px;
 }
 .header {
-  width: 500px;
+  width: 480px;
   margin: 0 10px 0 10px;
   box-shadow: 2px 3px 10px 2px rgb(205, 198, 198);
   height: 500px;
