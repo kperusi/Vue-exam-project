@@ -27,51 +27,95 @@ getRepo();
     <div class="main-cx">
       <div v-for="(eachRepo, index) in reposData" :key="index">
         <div class="main" v-if="eachRepo.name === $route.params.name">
-          <div class="col-1 border-rx-8 margin-left">
-            <div style="display: flex">
-              <img
-                src="../assets/date(2).svg"
-                alt="dateicon"
-                width="80"
-                height="80"
-              />
-              <!-- <h3 class="margin-bt border-rx-8 text-align-ct ft-size-m ht-s">Dates</h3> -->
+          <div class="flex-col margin-tp-m">
+            <div class="col-1 border-rx-8 margin-left">
+              <div style="display: flex">
+                <img
+                  src="../assets/date.svg"
+                  alt="dateicon"
+                  width="80"
+                  height="80"
+                />
+                <!-- <h3 class="margin-bt border-rx-8 text-align-ct ft-size-m ht-s">Dates</h3> -->
+              </div>
+              <div class="border-top wt-max">
+                <div class="flex-rw">
+                  <p>Created:</p>
+                  <p class="bg-red margin-left-auto pad-lt-rt-3 border-rx-8">
+                    {{
+                      eachRepo.created_at.substring(
+                        0,
+                        eachRepo.updated_at.indexOf("T")
+                      )
+                    }}
+                  </p>
+                </div>
+
+                <div class="flex-rw gap-10">
+                  <p>Updated:</p>
+                  <p class="bg-red margin-left-auto pad-lt-rt-3 border-rx-8">
+                    {{
+                      eachRepo.updated_at.substring(
+                        0,
+                        eachRepo.updated_at.indexOf("T")
+                      )
+                    }}
+                  </p>
+                </div>
+
+                <div class="flex-rw gap-10">
+                  <p>Pushed:</p>
+                  <p class="bg-red margin-left-auto pad-lt-rt-3 border-rx-8">
+                    {{
+                      eachRepo.pushed_at.substring(
+                        0,
+                        eachRepo.pushed_at.indexOf("T")
+                      )
+                    }}
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="border-top wt-max">
-              <div class="flex-rw margin-bt-5">
-                <p>Created at:</p>
-                <p class="bg-red margin-left-auto pad-lt-rt-3 border-rx-8">
-                  {{
-                    eachRepo.created_at.substring(
-                      0,
-                      eachRepo.updated_at.indexOf("T")
-                    )
-                  }}
-                </p>
+            <div class="col-1 border-rx-8 margin-left margin-tp-10">
+              <div style="display: flex">
+                <img
+                  src="../assets/date(2).svg"
+                  alt="dateicon"
+                  width="80"
+                  height="80"
+                />
+                <!-- <h3 class="margin-bt border-rx-8 text-align-ct ft-size-m ht-s">Dates</h3> -->
               </div>
+              <div class="border-top wt-max">
+                <div class="flex-rw">
+                  <!-- <p>Forks</p> -->
+                  <img src="../assets/fork.svg" alt="eye" width="30" height="30">
+                  <p class=" pad-lt-rt-3 border-rx-8">
+                    {{ eachRepo.forks }} Forks
+                  </p>
+                </div>
 
-              <div class="flex-rw">
-                <p>Updated at:</p>
-                <p class="bg-red margin-left-auto pad-lt-rt-3 border-rx-8">
-                  {{
-                    eachRepo.updated_at.substring(
-                      0,
-                      eachRepo.updated_at.indexOf("T")
-                    )
-                  }}
-                </p>
-              </div>
+                <div class="flex-rw gap-10">
+                  <!-- <p>Stars</p> -->
+                  <img src="../assets/star.svg" alt="eye" width="30" height="30">
+                  <p class="  pad-lt-rt-3 border-rx-8">
+                    {{
+                      eachRepo.stargazers_count
+                    }} Stars
+                  </p>
+                </div>
 
-              <div class="flex-rw">
-                <p>Pushedat:</p>
-                <p class="bg-red margin-left-auto pad-lt-rt-3 border-rx-8">
-                  {{
-                    eachRepo.pushed_at.substring(
-                      0,
-                      eachRepo.pushed_at.indexOf("T")
-                    )
-                  }}
-                </p>
+                <div class="flex-rw gap-10">
+                  
+                  <img src="../assets/eye.svg" alt="eye" width="30" height="30">
+
+                  <p class=" pad-lt-rt-3 border-rx-8">
+                    {{
+                      eachRepo.watchers
+                    }}
+                     Watchers
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -112,8 +156,9 @@ getRepo();
                 {{ eachRepo.owner.id }}
               </h3>
             </div>
-            <div class="flex-rw margin-left margin-tp-10 rw-3 flex-rw-wrap">
-              <p
+            <div class="flex-col margin-left margin-tp-10 rw-3  ">
+              <div class="flex-rw mb-wt gap-10">
+                <p
                 class="ht-l ft-size-a text-ct text-col-wh border-white border-rx-8 padding"
               >
                 {{ eachRepo.id }}
@@ -128,7 +173,12 @@ getRepo();
               >
                 {{ eachRepo.visibility }}
               </p>
-              <p class="text-col-wh text-ct line-ht">{{ eachRepo.description }}</p>
+              </div>
+             
+
+              <p class="text-col-wh text-ct line-ht mb-wt">
+                {{ eachRepo.description }}
+              </p>
             </div>
           </div>
 
@@ -167,7 +217,8 @@ getRepo();
       </div>
     </div>
 
-    <div class="footer"></div>
+    <div class="footer">
+    <p>@ sundayfamouscreation</p></div>
   </main>
   <!-- <RouterView></RouterView> -->
 </template>
@@ -220,13 +271,19 @@ getRepo();
 .col-1 {
   display: flex;
   flex-direction: column;
-  margin-top: 90px;
+  /* margin-top: 90px; */
   background-image: url(../assets/Purpink.png);
   padding: 10px;
   padding-right: 20px;
   color: white;
-  height: 300px;
+  height: 220px;
   box-shadow: 2px 3px 10px 2px rgb(205, 198, 198);
+}
+.margin-tp-10 {
+  margin-top: 10px;
+}
+.margin-tp-m {
+  margin-top: 100px;
 }
 .col-3 {
   width: 400px;
@@ -236,6 +293,9 @@ getRepo();
   margin-top: 140px;
   padding-bottom: 5px;
   border: solid white;
+}
+.gap-10 {
+  gap: 10px;
 }
 .margin-left {
   margin-left: 10px;
@@ -269,7 +329,12 @@ getRepo();
   font-size: 1.3em;
 }
 .border-top {
-  border-top: 2px solid white;
+  border-top: 3px solid rgb(53, 9, 94);
+  margin-top: -15px;
+  background-image: url(../assets/Purpink.png);
+  /* box-shadow: 0px 2px 0px 3px black; */
+  padding: 10px;
+  width: 100%;
 }
 .wt-max {
   width: 100%;
@@ -284,7 +349,7 @@ getRepo();
 .margin-left-auto {
   margin-left: auto;
 }
-.line-ht{
+.line-ht {
   line-height: 1em;
 }
 .pad-lt-rt-3 {
@@ -347,12 +412,17 @@ getRepo();
   margin-left: 0;
   margin-bottom: 0;
 }
-.flex-rw-wrap{
+.flex-rw-wrap {
   flex-wrap: wrap;
 }
 
 .border-white {
   border: 1px solid white;
+}
+.footer{
+  background-image: url(../assets/Purpink.png);
+  height: 90px;
+  color: white;
 }
 @media (min-width: 180px) and (max-width: 780px) {
   .main {
@@ -360,7 +430,7 @@ getRepo();
     padding: 0;
   }
   .header {
-    margin-top: -300px;
+    margin-top: -500px;
     margin-left: 0;
     margin-right: 0;
     /* border: solid red; */
@@ -387,17 +457,22 @@ getRepo();
 
   .col-1 {
     position: relative;
-    top: 370px;
+    top: 410px;
     /* margin-top: 300px; */
   }
   .col-3 {
     width: 100%;
     margin-left: 0;
-    margin-top: -135px;
+    margin-top: 60px;
   }
   .mb-mg-lft {
     margin-left: 20px;
   }
+  .mb-wt{
+    width: 100%;
+    
+  }
+  
 
   .footer {
     display: none;

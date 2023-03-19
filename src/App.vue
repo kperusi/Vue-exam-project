@@ -83,4 +83,10 @@ header {
   background-image: url(./assets/bg-desktop-light.jpg);
 background-color: var(--VeryLightGray);
 }
+@media (min-width: 180px) and (max-width: 780px) {
+  header{
+    width: 100%;
+    /* border: solid red; */
+  }
+}
 </style>
