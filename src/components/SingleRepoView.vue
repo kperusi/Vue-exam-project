@@ -112,7 +112,7 @@ getRepo();
                 {{ eachRepo.owner.id }}
               </h3>
             </div>
-            <div class="flex-rw margin-left margin-tp-10 rw-3">
+            <div class="flex-rw margin-left margin-tp-10 rw-3 flex-rw-wrap">
               <p
                 class="ht-l ft-size-a text-ct text-col-wh border-white border-rx-8 padding"
               >
@@ -128,6 +128,7 @@ getRepo();
               >
                 {{ eachRepo.visibility }}
               </p>
+              <p class="text-col-wh text-ct line-ht">{{ eachRepo.description }}</p>
             </div>
           </div>
 
@@ -246,8 +247,9 @@ getRepo();
   margin-bottom: 20px;
 }
 .margin-tp-10 {
-  margin-top: 10px;
+  margin-top: 15px;
 }
+
 .ht-m {
   height: 200px;
 }
@@ -255,7 +257,7 @@ getRepo();
   height: 80px;
 }
 .ht-l {
-  height: 60px;
+  height: 40px;
 }
 .text-ct {
   text-align: center;
@@ -281,6 +283,9 @@ getRepo();
 }
 .margin-left-auto {
   margin-left: auto;
+}
+.line-ht{
+  line-height: 1em;
 }
 .pad-lt-rt-3 {
   padding-left: 3px;
@@ -340,6 +345,10 @@ getRepo();
     rgb(182, 14, 212)
   );
   margin-left: 0;
+  margin-bottom: 0;
+}
+.flex-rw-wrap{
+  flex-wrap: wrap;
 }
 
 .border-white {
