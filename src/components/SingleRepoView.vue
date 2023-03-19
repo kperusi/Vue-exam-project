@@ -339,6 +339,7 @@ getRepo();
     rgb(104, 4, 104),
     rgb(182, 14, 212)
   );
+  margin-left: 0;
 }
 
 .border-white {
